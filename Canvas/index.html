@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drow-Box</title>
+    <style>
+        canvas{
+            /* border: 2px solid #92a420; */
+            display: block;
+            margin: auto;  
+        }
+        h1{
+            text-align: center;
+            color: rgb(209, 51, 23);
+        }
+    </style>
+</head>
+<body>
+    <canvas width="500px" height="500px" id="myCanvas"></canvas>
+    <h1>image size : 500px - 500px</h1>
+
+    <script>
+        app=document.getElementById('myCanvas');
+        ctr=app.getContext('2d');
+
+        ctr.fillStyle="gold";
+        ctr.fillRect(0,0,400,400)
+
+        ctr.fillStyle="red";
+        ctr.fillRect(100,100,450,200);
+
+    </script>
+    
+</body>
+</html>
